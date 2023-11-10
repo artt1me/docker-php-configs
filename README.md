@@ -1,5 +1,7 @@
 # Базовая настройка Docker compose
 
+Установить wsl. Инструкцию можно найти здесь https://learn.microsoft.com/ru-ru/windows/wsl/install
+
 Зайти на сайт и скачать docker-desktop 
 
 https://www.docker.com/products/docker-desktop/
