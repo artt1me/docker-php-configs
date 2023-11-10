@@ -1,0 +1,17 @@
+name: project_1
+services:
+  server:
+    build: nginx
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - fpm
+    volumes:
+      - ../:/app
+  fpm:
+    build: fpm
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ../:/app
